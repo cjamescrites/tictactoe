@@ -1,0 +1,163 @@
+/* add hover styling to change color of squares red-based gradient and blue-based gradient */
+ /* add color change for winning game */
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    background-image: url(background.jpg);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    text-align: center;
+    height: 80%;
+}
+
+h1 {
+    margin-top: 40px;
+    font-weight: bolder;
+    border: 1px black solid;
+    width: 200px;
+    background-image: url(background.jpg);
+    background-size: 200px;
+}
+
+.h1-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.play-board {
+    /* border: 5px blue solid; */
+    display: grid;
+    grid-template-areas:
+    "TL TC TR"
+    "ML MC MR"
+    "BL BC BR";
+    gap: 1px;
+}
+
+.play-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-container > .play-choice {
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    border: 1px black solid;
+    padding: 50px;
+}
+
+.top-left {
+    grid-area: TL;
+}
+
+.top-center {
+    grid-area: TC;
+}
+
+.top-right {
+    grid-area: TR;
+}
+
+.mid-left {
+    grid-area: ML;
+}
+
+.mid-center {
+    grid-area: MC;
+}
+
+.mid-right {
+    grid-area: MR;
+}
+
+.bot-left {
+    grid-area: BL;
+}
+
+.bot-center {
+    grid-area: BC;
+}
+
+.bot-right {
+    grid-area: BR;
+}
+
+.square {
+    background-image: url(background.jpg);
+    background-size: 225px;
+}
+
+button {
+    font-weight: bolder;
+    padding: 8px;
+    font-size: 125%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.winner {
+    background-image: none;
+    background-color: rgb(255, 174, 0);
+    color: black;
+}
+
+.x {
+    background-image: none;
+    background-color: rgb(135, 206, 250);
+    color: white;
+}
+
+.o {
+    background-image: none;
+    background-color: rgb(248, 12, 14);
+    color: black;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+#single-player {
+    background-image: url(background.jpg);
+    background-size: 130px;
+}
+
+#multi-player {
+    background-image: url(background.jpg);
+    background-size: 130px;
+}
+
+.restart {
+    background-image: url(background.jpg);
+    background-size: 100px;
+}
+

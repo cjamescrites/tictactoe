@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="/browsicon.png">
+</head>
+<body>
+    <div class="main">
+        <div class="h1-cont">
+            <h1>Tic Tac Toe</h1>
+            <p id="win-message"></p>
+        </div>
+        <div class="board-container">
+            <div class="play-choice">
+                <button id="single-player" value="">Single Player</button>
+                <button id="multi-player" value="">Multi Player</button>
+            </div>
+            <div class="play-board hidden">
+                <button class="top-left square playable" value=""></button>
+                <button class="top-center square playable" value=""></button>
+                <button class="top-right square playable" value=""></button>
+                <button class="mid-left square playable" value=""></button>
+                <button class="mid-center square playable" value=""></button>
+                <button class="mid-right square playable" value=""></button>
+                <button class="bot-left square playable" value=""></button>
+                <button class="bot-center square playable" value=""></button>
+                <button class="bot-right square playable" value=""></button>
+            </div>
+        </div>
+        <button class="restart">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
